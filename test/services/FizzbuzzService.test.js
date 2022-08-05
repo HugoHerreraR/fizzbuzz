@@ -6,4 +6,10 @@ describe("Test for FizzbuzzService applyValidationInExplorer", () => {
         const explorerTrick = FizzbuzzService.applyValidationInExplorer(explorer);
         expect(explorerTrick.trick).toBe(1);
     }); 
+
+    test("Condición: Explorer.score % 3 === 0 && explorer.score % 5 === 0", () => {
+        const explorer = {name: "Explorer1", score: 15}
+        const explorerTrick = FizzbuzzService.applyValidationInExplorer(explorer);
+        expect(explorerTrick.trick).toStrictEqual("FIZZBUZZ");
+    }); 
 })
