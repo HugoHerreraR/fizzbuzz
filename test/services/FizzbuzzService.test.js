@@ -18,4 +18,10 @@ describe("Test for FizzbuzzService applyValidationInExplorer", () => {
         const explorerTrick = FizzbuzzService.applyValidationInExplorer(explorer);
         expect(explorerTrick.trick).toStrictEqual("FIZZ");
     }); 
+
+    test("Condición: explorer.score % 5 === 0", () => {
+        const explorer = {name: "Explorer1", score: 5}
+        const explorerTrick = FizzbuzzService.applyValidationInExplorer(explorer);
+        expect(explorerTrick.trick).toStrictEqual("BUZZ");
+    });
 })
