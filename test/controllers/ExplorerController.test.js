@@ -18,5 +18,15 @@ describe("Test para ExplorerController", () => {
         const explorerUsername = ExplorerController.getExplorersUsernamesByMission("node");
         expect(explorerUsername).toEqual(["ajolonauta1", "ajolonauta2","ajolonauta3", "ajolonauta4", "ajolonauta5",
         "ajolonauta11", "ajolonauta12", "ajolonauta13", "ajolonauta14", "ajolonauta15"])
+    });
+    
+    test("Test 3: Metodo getExplorersAmonutByMission", () => {
+        const numUser = ExplorerController.getExplorersAmonutByMission("node");
+        expect(numUser).toBe(10);
+    });
+
+    test("Test 3.1: Metodo getExplorersAmonutByMission con mission java", () => {
+        const numUser = ExplorerController.getExplorersAmonutByMission("java");
+        expect(numUser).toBe(5)
     })
 })
