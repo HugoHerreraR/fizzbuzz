@@ -46,4 +46,4 @@ describe("Test for FizzbuzzService applyValidationInNumber", () => {
         const result = FizzbuzzService.applyValidationInNumber(14);
         expect(result).toBe(14);
     });
-})
+});
