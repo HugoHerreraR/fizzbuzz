@@ -36,4 +36,14 @@ describe("Test for FizzbuzzService applyValidationInNumber", () => {
         const result = FizzbuzzService.applyValidationInNumber(3);
         expect(result).toStrictEqual("FIZZ");
     });
+    
+    test("Test 3: number % 5 === 0", () => {
+        const result = FizzbuzzService.applyValidationInNumber(5);
+        expect(result).toStrictEqual("BUZZ");
+    });
+
+    test("Test 4: else", () => {
+        const result = FizzbuzzService.applyValidationInNumber(14);
+        expect(result).toBe(14);
+    });
 })
