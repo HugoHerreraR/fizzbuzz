@@ -25,3 +25,10 @@ describe("Test for FizzbuzzService applyValidationInExplorer", () => {
         expect(explorerTrick.trick).toStrictEqual("BUZZ");
     });
 });
+
+describe("Test for FizzbuzzService applyValidationInNumber", () => {
+    test("Test 1: number % 3 === 0  && number % 5 === 0", () => {
+        const result = FizzbuzzService.applyValidationInNumber(15);
+        expect(result).toStrictEqual("FIZZBUZZ");
+    })
+})
