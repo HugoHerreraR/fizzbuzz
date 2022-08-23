@@ -35,4 +35,8 @@ describe("Test para ExplorerController", () => {
         expect(score).toStrictEqual("FIZZBUZZ");
     });
 
+    test("Test 4.2: Metodo applyFizzbuzz con score 9", () => {
+        const score = ExplorerController.applyFizzbuzz(9);
+        expect(score).toStrictEqual("FIZZ");
+    }); 
 });
