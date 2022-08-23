@@ -29,4 +29,10 @@ describe("Test para ExplorerController", () => {
         const numUser = ExplorerController.getExplorersAmonutByMission("java");
         expect(numUser).toBe(5);
     });
+
+    test("Test 4.1: Metodo applyFizzbuzz con score 15", () => {
+        const score = ExplorerController.applyFizzbuzz(15);
+        expect(score).toStrictEqual("FIZZBUZZ");
+    });
+
 });
